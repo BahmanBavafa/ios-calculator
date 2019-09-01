@@ -34,7 +34,6 @@ class ViewController: UIViewController {
     
     
     @IBAction func didPressplus(_ sender: Any) {
-        prin("hello")
 
         
     }
