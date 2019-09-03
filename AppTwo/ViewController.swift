@@ -15,6 +15,9 @@ enum modes {
 
 class ViewController: UIViewController {
     
+    
+    @IBOutlet weak var label: UILabel!
+    
     var labelString:String = "0"
     var currentMode:modes = .not_set
     var savedNum:Int = 0
@@ -51,15 +54,20 @@ class ViewController: UIViewController {
     
     
     @IBAction func didPressNUm(_ sender: UIButton) {
+        let stringValue:String? = sender.titleLabel?.text
+        labelString = labelString.appending(stringValue!)
+        
+        updateText()
         
     }
-    
-   
-    
     
     func updateText() {
-        
+        guard let labelInt:Int = Int(labelString) else {
+            return
+        }
+       label.text = "\(labelInt)"
     }
+    
     func changeModes(newMode:modes){
         
     }
