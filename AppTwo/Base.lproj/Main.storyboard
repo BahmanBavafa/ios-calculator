@@ -154,6 +154,9 @@
                                 <state key="normal" title="x">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="didpressmultiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wdx-ZI-Pus"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiQ-en-3Uz">
                                 <rect key="frame" x="10" y="634.66666666666663" width="173" height="133.33333333333337"/>
